@@ -1,0 +1,176 @@
+/*
+    ============
+    GLOBAL
+    ============
+*/
+
+/* General styling */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+:root {
+	--padding: 0px 0 10px 0;
+}
+
+* {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #8989bb;
+}
+
+h1 {
+    font-size: 50px;
+    width: 60%;
+}
+
+h2, h3 {
+    width: 50%;
+    font-weight: normal;
+}
+
+input, select, h1, h2, h3, article, aside {
+    margin: var(--padding);
+}
+
+button {
+    padding: 10px;
+}
+
+aside {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/*
+    ============
+    NAVIGATION
+    ============
+*/
+header {
+    position: fixed;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* Visibility hidden/visible so their format remains intact */
+header nav ul li a span {
+    visibility: hidden;
+}
+
+header nav ul li a:hover > span {
+    visibility: visible;
+}
+
+header nav ul li img {
+    width: 50px;
+}
+
+/*
+    ============
+    CONTENT
+    ============
+*/
+/* Content container displayed on all files */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+}
+
+/* Flags from country.php */
+.flag_img {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* Weather from city.php */
+.city_h1 {
+    padding-bottom: 0;
+}
+
+.temperature_comment {
+    padding-bottom: 15px;
+}
+
+.weather_p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.temp_p {
+    margin: 10px;
+    width: 250px;
+    font-weight: bold;
+}
+
+.temp_p span {
+    font-weight: normal;
+}
+
+.weather_img {
+    max-width: 100px;
+}
+
+/* Chosen colors in colors.php */ 
+.input_colors {
+    display: flex;
+}
+
+.individual_color {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 25px 25px 10px 25px;
+}
+
+.divcolor {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: var(--padding);
+}
+
+/* Profile */
+article ul li {
+    font-weight: bold;
+    text-align: left;
+    margin: var(--padding);
+}
+
+article ul li span {
+    font-weight: normal;
+}
+
+.input_colors_profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_colors_profile > div {
+    margin: 20px;
+}
