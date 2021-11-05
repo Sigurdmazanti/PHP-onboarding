@@ -9,7 +9,7 @@ HTML, CSS, PHP, OpenWeatherMap API and a bit of JS
 
 ## Content
 * Simple CSS, HTML & JS, as the main focus of this concept was to work with PHP
-* A lot of the page structure is set up in a single .php file, which is included in all of the .php files to avoid repeatable lines code
+* A lot of the page structure is set up in a single .php file, which is included in all of the .php files to avoid repeatable lines of code
 * Input field values are stored as session variables so they are usable within several files, POST method is used to transfer this data
 * A calculator to subtract/add a value from/to the age session variable, created with a switch statement function
 * if-ifelse & if-else functions to display different paragraph texts, corresponding to the user input value
